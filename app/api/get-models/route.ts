@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { LLMProvider, getAvailableProviders } from '@/lib/providers/config';
 import { createProviderClient } from '@/lib/providers/provider';
 
+export const runtime = 'edge';
+
 export async function GET(request: NextRequest) {
   try {
     // Get the provider from the request or use the default provider

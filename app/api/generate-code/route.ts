@@ -2,6 +2,8 @@ import { NextRequest } from 'next/server';
 import { LLMProvider } from '@/lib/providers/config';
 import { createProviderClient } from '@/lib/providers/provider';
 
+export const runtime = 'edge';
+
 export async function POST(request: NextRequest) {
   try {
     // Parse the JSON body

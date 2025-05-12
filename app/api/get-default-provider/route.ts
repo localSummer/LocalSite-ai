@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import { LLMProvider } from '@/lib/providers/config';
 
+export const runtime = 'edge';
+
 export async function GET() {
   try {
     // Use the default provider from environment variables or DeepSeek as fallback
